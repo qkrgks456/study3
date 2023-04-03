@@ -14,7 +14,7 @@
 <div class="container">
     <div class="py-5 text-center">
         <h2>상품 수정 폼</h2></div>
-    <form action="item.html" th:action="@{/{itemId}/edit(itemId = ${item.getId()})}" method="post">
+    <form action="item.html" th:action="@{/basic/items/{itemId}/edit(itemId = ${item.getId()})}" method="post">
         <div>
             <label for="id">상품 ID</label>
             <input type="text" id="id" name="id" class="form-control" value="1"
@@ -50,8 +50,6 @@
                 </button>
             </div>
         </div>
-        <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example"
-               readonly>
     </form>
 </div>
 </body>
